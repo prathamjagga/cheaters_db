@@ -24,7 +24,7 @@ export default function ReportUserComponent() {
     setSubmitResult(null);
 
     try {
-      const response = await fetch("http://localhost:5000/report", {
+      const response = await fetch("https://cheaters-db.onrender.com/report", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

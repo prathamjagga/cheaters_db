@@ -28,7 +28,7 @@ export default function App() {
       setNoResultFound(false);
       // Replace this URL with your actual API endpoint
       const response = await fetch(
-        `http://localhost:5000/reports?type=${searchBy}&id=${searchQuery}`
+        `https://cheaters-db.onrender.com/reports?type=${searchBy}&id=${searchQuery}`
       );
 
       if (!response.ok) {

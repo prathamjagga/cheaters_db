@@ -26,6 +26,9 @@ app.get("/reports", async (req, res) => {
   const results = await Report.find({ type, id });
   return res.json({ results: results });
 });
+app.get("/health", (req, res) => {
+  res.send("healthy");
+});
 
 app.listen(process.env.PORT || 5000, () => {
   mongoose
